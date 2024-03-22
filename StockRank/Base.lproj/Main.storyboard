@@ -41,6 +41,13 @@
                                                     <color key="textColor" systemColor="systemBlueColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fws-ys-1PT">
+                                                    <rect key="frame" x="50" y="34" width="48" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="4r1-xy-1Sm"/>
+                                                        <constraint firstAttribute="width" constant="48" id="ljp-dc-TpE"/>
+                                                    </constraints>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="테슬라" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BF1-tR-YXW">
                                                     <rect key="frame" x="118" y="34" width="42" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
@@ -67,13 +74,6 @@
                                                         <constraint firstAttribute="height" constant="40" id="ikr-5v-XK3"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fws-ys-1PT">
-                                                    <rect key="frame" x="50" y="34" width="48" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="4r1-xy-1Sm"/>
-                                                        <constraint firstAttribute="width" constant="48" id="ljp-dc-TpE"/>
-                                                    </constraints>
-                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -92,6 +92,13 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="401" height="108"/>
+                                        <connections>
+                                            <outlet property="companyIconImageView" destination="Fws-ys-1PT" id="c8S-QX-fch"/>
+                                            <outlet property="companyNameLabel" destination="BF1-tR-YXW" id="gGQ-kY-02Y"/>
+                                            <outlet property="companyPriceLabel" destination="146-VN-9Kc" id="QKj-Bb-Usm"/>
+                                            <outlet property="diffLabel" destination="tjX-66-igM" id="iW4-qN-Sqz"/>
+                                            <outlet property="rankLabel" destination="c0H-bi-VgC" id="Pzc-1X-pfq"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
