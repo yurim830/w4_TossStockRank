@@ -37,7 +37,9 @@ extension StockRankViewController: UICollectionViewDataSource {
     }
     // [필수] 셀을 어떻게 표현할지 정하는 함수
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StockRankCollectionViewCell", for: <#T##IndexPath#>) // CollectionView에 등록한 것 중 재사용 가능한 셀을 가져옴
+        return cell
+       // return UICollectionViewCell()
     }
     
     
