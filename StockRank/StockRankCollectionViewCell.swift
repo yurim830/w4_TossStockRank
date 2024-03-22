@@ -24,7 +24,26 @@ class StockRankCollectionViewCell: UICollectionViewCell {
         companyIconImageView.image = UIImage(named: stock.imageName)
         companyNameLabel.text = "\(stock.name)"
         companyPriceLabel.text = "\(convertToCurrencyFormat(price: stock.price))"
-        diffLabel.text = "\(stock.diff)"
+        diffLabel.text = "\(stock.diff)%"
+        // 색깔 지정
+        // 방법 1
+        if stock.diff >= 0 {
+            diffLabel.textColor = .systemRed
+        } else {
+            diffLabel.textColor = .systemBlue
+        }
+        
+//        // 방법 2
+//        let color: UIColor
+//        if stock.diff > 0 {
+//            color = UIColor.systemRed
+//        } else {
+//            color = UIColor.systemBlue
+//        }
+//        diffLabel.textColor = color
+//        
+//        // 방법3
+//        diffLabel.textColor = stock.diff > 0 ? UIColor.systemRed : UIColor.systemBlue
         
     }
     
